@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976d2</color>
+    <color name="colorPrimaryDark">#004ba0</color>
+    <color name="colorAccent">#63a4ff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#CBCBCB</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gradientStart">#3F51B5</color>
+    <color name="gradientEnd">#2196F3</color>
+
+
+    <color name="colorPrimaryBlack">#263238</color>
+    <color name="colorPrimaryDarkBlack">#000a12</color>
+    <color name="colorAccentBlack">#4f5b62</color>
+    <color name="colorPrimaryLightBlack">#b0b0b0</color>
+
+
+    <color name="colorPrimaryUNAM">#002b7a</color>
+    <color name="colorPrimaryDarkUNAM">#00024d</color>
+    <color name="colorAccentUNAM">#d59f0f</color>
+    <color name="colorPrimaryLightUNAM">#4653aa</color>
+
+
+    <color name="colorPrimaryPurple">#9c27b0</color>
+    <color name="colorPrimaryDarkPurple">#6a0080</color>
+    <color name="colorAccentPurple">#d05ce3</color>
+    <color name="colorPrimaryLightPurple">#ff8eff</color>
+
+
+
+    <color name="colorPrimaryGreen">#2e7d32</color>
+    <color name="colorPrimaryDarkGreen">#005005</color>
+    <color name="colorAccentGreen">#60ad5e</color>
+    <color name="colorPrimaryLightGreen">#91df8c</color>
+
+    <color name="colorPrimaryCyan">#00796b</color>
+    <color name="colorPrimaryDarkCyan">#004c40</color>
+    <color name="colorAccentCyan">#48a999</color>
+    <color name="colorPrimaryLightCyan">#7cdbca</color>
+
+
+    <color name="colorPrimaryRed">#b71c1c</color>
+    <color name="colorPrimaryDarkRed">#7f0000</color>
+    <color name="colorAccentRed">#f05545</color>
+    <color name="colorPrimaryLightRed">#ff8871</color>
+</resources>

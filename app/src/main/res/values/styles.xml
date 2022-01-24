@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="themeName">default</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="textColorNav">@color/black</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryLight">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">
+            @drawable/splashscreen
+        </item>
+    </style>
+
+    <style name="AppThemeBlack" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="themeName" format='string' >black</item>
+        <item name="textColorNav">@color/black</item>
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlack</item>
+        <item name="colorAccent">@color/colorAccentBlack</item>
+        <item name="colorPrimaryLight">@color/colorPrimaryLightBlack</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+    </style>
+
+    <style name="AppThemeUNAM" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="themeName" format='string' >unam</item>
+        <item name="textColorNav">@color/black</item>
+        <item name="colorPrimary">@color/colorPrimaryUNAM</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkUNAM</item>
+        <item name="colorAccent">@color/colorAccentUNAM</item>
+        <item name="colorPrimaryLight">@color/colorPrimaryLightUNAM</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+    </style>
+
+    <style name="AppThemePurple" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="themeName" format='string' >purple</item>
+        <item name="textColorNav">@color/black</item>
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentPurple</item>
+        <item name="colorPrimaryLight">@color/colorPrimaryLightPurple</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+    </style>
+
+    <style name="AppThemeGreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="themeName" format='string' >green</item>
+        <item name="textColorNav">@color/black</item>
+        <item name="colorPrimary">@color/colorPrimaryGreen</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkGreen</item>
+        <item name="colorAccent">@color/colorAccentGreen</item>
+        <item name="colorPrimaryLight">@color/colorPrimaryLightGreen</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+    </style>
+
+    <style name="AppThemeCyan" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="themeName" format='string' >cyan</item>
+        <item name="textColorNav">@color/black</item>
+        <item name="colorPrimary">@color/colorPrimaryCyan</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkCyan</item>
+        <item name="colorAccent">@color/colorAccentCyan</item>
+        <item name="colorPrimaryLight">@color/colorPrimaryLightCyan</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+    </style>
+
+    <style name="AppThemeRed" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="themeName" format='string' >red</item>
+        <item name="textColorNav">@color/black</item>
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentRed</item>
+        <item name="colorPrimaryLight">@color/colorPrimaryLightRed</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+    </style>
+
+</resources>

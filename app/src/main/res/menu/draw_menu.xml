@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_person"
+            android:title="Alumno" />
+        <item
+            android:id="@+id/nav_grades"
+            android:icon="@drawable/ic_grade"
+            android:title="Historial" />
+
+        <item
+            android:id="@+id/nav_agenda"
+            android:icon="@drawable/ic_file"
+            android:title="Agenda" />
+
+        <item
+            android:id="@+id/nav_assignments"
+            android:icon="@drawable/ic_assignment"
+            android:title="Tareas" />
+
+        <item
+            android:id="@+id/nav_horarios"
+            android:icon="@drawable/ic_horarios"
+            android:title="Horario" />
+
+        <item
+            android:id="@+id/nav_classroom"
+            android:icon="@drawable/ic_classroom"
+            android:title="Classroom" />
+
+        <item
+            android:id="@+id/nav_calendario"
+            android:icon="@drawable/ic_calendar"
+            android:title="Calendario Escolar" />
+
+    </group>
+
+    <item android:title="Utilidades">
+        <menu>
+            <item
+                android:id="@+id/nav_theme"
+                android:icon="@drawable/ic_theme"
+                android:title="Tema" />
+
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_mail"
+                android:title="Contacto" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Compartir" />
+
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit"
+                android:title="Salir" />
+
+        </menu>
+    </item>
+
+
+
+</menu>

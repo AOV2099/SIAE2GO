@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- <item
+         android:id="@+id/switchGrades"
+         android:title=""
+         android:visibility="visible"
+         app:actionLayout="@layout/switch_item"
+         app:showAsAction="always">
+     </item> -->
+
+   <!-- <item
+        android:id="@+id/instit_item"
+        android:title="Prepa/CCH"
+        app:actionLayout="@layout/menu_action_frame_view"
+        app:showAsAction="ifRoom" /> -->
+
+    <item
+        android:id="@+id/instit_item"
+        android:title="Prepa/CCH"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/btnInstituto"
+        android:icon="@drawable/ic_swipe"
+        android:title="swipe"
+        app:showAsAction="ifRoom"
+        android:iconTint="@drawable/item_shape"/>
+
+
+
+
+</menu>

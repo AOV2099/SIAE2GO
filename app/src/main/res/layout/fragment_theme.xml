@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ThemeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnThemeUNAM"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorPrimaryUNAM"
+                android:text="UNAM"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnThemeBlue"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="AZUL"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnThemeBlack"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorPrimaryBlack"
+                android:text="NEGRO"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnThemePurple"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorPrimaryPurple"
+                android:text="MORADO"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnThemeRed"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorPrimaryRed"
+                android:text="ROJO"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnThemeGreen"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorPrimaryGreen"
+                android:text="VERDE"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnThemeCyan"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorPrimaryCyan"
+                android:text="CYAN"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

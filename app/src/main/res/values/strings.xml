@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SIAE Movil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="colorpicker_dialog_title">Elige un color</string>
+    <string name="colorpicker_dialog_cancel">CANCELAR</string>
+    <string name="colorpicker_dialog_ok">OK</string>
+
+</resources>

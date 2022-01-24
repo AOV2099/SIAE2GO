@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linlayTemplateSubject"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edittext_bg_noborder"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvIdSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvNombreSubject"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="MATERIA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvSalon"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="Salon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDaySubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="Día placeholder" />
+
+            <TextView
+                android:id="@+id/tvStartHourSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HORA: 12:12"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvEndHourSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HORA: 12:12"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

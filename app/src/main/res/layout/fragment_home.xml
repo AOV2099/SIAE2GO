@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintBgHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewFoto"
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="?attr/colorAccent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp">
+                <!--android:layout_width="295dp"
+                android:layout_height="295dp"
+                app:cardCornerRadius="150dp"-->
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="125dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgFoto"
+                        android:layout_width="200dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvContainerHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/btn_bg_fill"
+                    android:elevation="10dp"
+                    android:paddingBottom="18dp">
+
+                    <TextView
+                        android:id="@+id/tvApellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="APELLIDO"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="24sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NOMBRE"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="24sp"
+                        app:layout_constraintTop_toBottomOf="@+id/tvApellido"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:background="@color/gray"
+                        app:layout_constraintBottom_toTopOf="@+id/tvCuenta"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+
+                    <TextView
+                        android:id="@+id/tvCURP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="CURP: "
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCuenta"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvCuenta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="CUENTA: "
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                    <TextView
+                        android:id="@+id/tvEscuelaAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text=" CARRERA: ING EN COMPUTACION"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCURP"
+                        tools:layout_editor_absoluteX="0dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_bg_fill"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivAlumnoQR"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,12 +10,16 @@
     android:animateLayoutChanges="true">
 
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/rellay1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical">
 
         <!-- android:layout_centerHorizontal="true"
         android:layout_centerInParent="true" -->
@@ -28,144 +32,189 @@
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/logo_unam_oro" />
 
-        <RelativeLayout
-            android:id="@+id/subRellay1"
-            android:visibility="visible"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imLogoUNAMLogin">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/tvLogIn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:fontFamily="sans-serif-light"
-                android:text="SIAE"
-                android:textColor="@color/white"
-                android:textSize="40sp" />
-
-            <LinearLayout
-                android:layout_below="@id/tvLogIn"
+            <RelativeLayout
+                android:id="@+id/subRellay1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/linLay1">
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvLogIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="SIAE"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
 
                 <LinearLayout
+                    android:id="@+id/linLay1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="20dp">
+                    android:layout_below="@id/tvLogIn"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-light"
-                        android:text="Usuario:"
-                        android:textAllCaps="true"
-                        android:textColor="@color/white"
-                        android:textSize="20sp" />
-
-                    <EditText
-                        android:id="@+id/etUser"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/et_bg"
-                        android:fontFamily="sans-serif-light"
-                        android:hint="Boleta"
-                        android:inputType="text"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:text=""
-                        android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Usuario:"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="Boleta"
+                            android:inputType="text"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="PASS:"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="Contraseña"
+                            android:inputType="text"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                        <!-- 316317911 Shiinasou4-->
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="CAPTCHA:"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/ivCaptcha"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                        <EditText
+                            android:id="@+id/etCaptcha"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/et_bg"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="Captcha"
+                            android:inputType="number"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <!-- 316317911 Shiinasou4-->
+
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <ProgressBar
+                    android:id="@+id/progressBarLogIn"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="10dp">
+                    android:layout_below="@id/linLay1"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_toEndOf="@+id/btnLogin"
+                    android:visibility="invisible" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-light"
-                        android:text="PASS:"
-                        android:textAllCaps="true"
-                        android:textColor="@color/white"
-                        android:textSize="20sp" />
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/linLay1"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:text="LogIn"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="15sp">
 
-                    <EditText
-                        android:id="@+id/etPassword"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/et_bg"
-                        android:fontFamily="sans-serif-light"
-                        android:hint="Contraseña"
-                        android:inputType="textPassword"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:text=""
-                        android:textColor="@color/white"
-                        android:textSize="15sp" />
-                    <!-- 316317911 Shiinasou4-->
+                </Button>
 
+                <CheckBox
+                    android:id="@+id/cbRecordar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/linLay1"
+                    android:layout_marginTop="-1dp"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Recordar claves"
+                    android:textColor="@color/white" />/>
 
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <ProgressBar
-                android:id="@+id/progressBarLogIn"
-                style="?android:attr/progressBarStyle"
-                android:visibility="invisible"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/linLay1"
-                android:layout_marginStart="13dp"
-                android:layout_marginTop="48dp"
-                android:layout_toEndOf="@+id/btnLogin" />
-
-            <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_below="@+id/linLay1"
-                android:layout_centerInParent="true"
-                android:layout_marginTop="55dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/btn_bg"
-                android:fontFamily="sans-serif-light"
-                android:paddingLeft="70dp"
-                android:paddingRight="70dp"
-                android:text="LogIn"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="15sp">
-
-            </Button>
-
-            <CheckBox
-                android:id="@+id/cbRecordar"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_below="@id/linLay1"
-                android:layout_marginTop="-1dp"
-                android:buttonTint="@color/white"
-                android:fontFamily="sans-serif-light"
-                android:text="Recordar claves"
-                android:textColor="@color/white" />/>
-
-        </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
 
 
-    </RelativeLayout>
+    </LinearLayout>
     
     <RelativeLayout
         android:id="@+id/rellay2"

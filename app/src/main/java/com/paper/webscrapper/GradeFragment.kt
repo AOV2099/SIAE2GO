@@ -59,12 +59,14 @@ class GradeFragment : Fragment() {
         return vista
     }
 
+
     private fun retriveWebInfo(valFacu: Int){
         thread {
             if(Network.hayRed(activity as AppCompatActivity)){
                 try {
 
-                    var response = Jsoup.connect("https://www.dgae-siae.unam.mx/www_gate.php")
+
+                    /*var response = Jsoup.connect("https://www.dgae-siae.unam.mx/www_gate.php")
                         .timeout(5000)// tiempo maximo de conexión o fallo
                         .data("acc", "aut")
                         .data("usr_logi", USER)
@@ -92,21 +94,21 @@ class GradeFragment : Fragment() {
                             .timeout(5000)// tiempo maximo de conexión o fallo
                             .cookies(ckie)
                             .get()
+*/
 
-
-                    var str = documentCalif.text()
+                    var str = GRADES_DOC?.text()
 
                     var tableCalif =
-                        documentCalif.getElementsByTag("tbody")[9].toString()  //el 5 es para los promedios
+                        GRADES_DOC?.getElementsByTag("tbody")?.get(9).toString()  //el 5 es para los promedios
 
-                    plantel = documentCalif.select("td.CellTns[colspan = 2] > b")[0].text()
-                    carrera = documentCalif.select("td.CellTns[colspan = 2] > b")[1].text()
-                    promedio = documentCalif.select("td.CellTns > p > b").text()
-                    ingreso = documentCalif.select("td.CellTns > b")[2].text()
+                    plantel = GRADES_DOC!!.select("td.CellTns[colspan = 2] > b")[0].text()
+                    carrera = GRADES_DOC!!.select("td.CellTns[colspan = 2] > b")[1].text()
+                    promedio = GRADES_DOC!!.select("td.CellTns > p > b").text()
+                    ingreso = GRADES_DOC!!.select("td.CellTns > b")[2].text()
 
 
-                    var tableCalifRows = documentCalif.select(" tr  [align=center] ")
-                    var tableCalifCols = documentCalif.select(" tr  [align=center] > td")
+                    var tableCalifRows = GRADES_DOC!!.select(" tr  [align=center] ")
+                    var tableCalifCols = GRADES_DOC!!.select(" tr  [align=center] > td")
 
 
                     //var lista2d = ArrayList< ArrayList<String> >()
